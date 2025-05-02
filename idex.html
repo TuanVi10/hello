@@ -1,1 +1,22 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Câu hỏi của bạn</title>
+</head>
+<body>
+  <h2>Bạn thích món nào hơn?</h2>
+  <button onclick="showResult('A')">A. Phở</button>
+  <button onclick="showResult('B')">B. Bún bò</button>
+  <div id="result" style="margin-top:20px;font-weight:bold;"></div>
+
+  <script>
+    const strA = "Bạn chọn Phở! Một lựa chọn rất tuyệt!";
+    const strB = "Bạn chọn Bún bò! Cũng rất ngon đấy!";
+    function showResult(ans) {
+      document.getElementById("result").textContent = ans === 'A' ? strA : strB;
+    }
+  </script>
+</body>
+</html>
 
